@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Go Incognito!</title>
+    <style>
+	.search-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	#search-input,
+	#search-button {
+		margin: auto;
+	}
+
+	#search-input:focus,
+	#search-button:focus {
+		outline: none;
+	}
+
+	body {
+		width: 350px;
+		height: 40px;
+		margin: auto;
+		background-color: white;
+	}
+
+	#search-input {
+		height: 20px;
+		width: 200px;
+	}
+
+	#search-button {
+		font-weight: bold;
+		color: white;
+		background-color: #382464;
+		width: 100px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Write here">
+      <button id="search-button">Go Incognito!</button>
+    </div>
+    <div class="error" id="error-message"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
